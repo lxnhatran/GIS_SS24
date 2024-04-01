@@ -1,2 +1,2 @@
 # GIS_SS24
-Hallo 
+Projektidee: Ein Interaktives 
