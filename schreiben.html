@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freundebuch</title>
+    <link rel="stylesheet" href="schreiben.css">
+</head>
+<body>
+    <div class="top-nav">
+        <a href="übermich.html" class="heart-button small-link1">Über mich</a>
+        <a href="bounty.html" class="heart-button small-link2">Bounty</a>
+        <a href="kontakt.html" class="heart-button small-link3">Kontakt</a>
+    </div>
+    <div class="container">
+        <form class="friend-entry" action="process_form.php" method="post" enctype="multipart/form-data">
+            <input type="file" accept="image/*" name="avatar">
+            <input type="text" placeholder="Name" name="name">
+            <textarea placeholder="Was ist deine Lieblingsfarbe?" name="favoriteColor"></textarea>
+            <textarea placeholder="Was magst du an Linh?" name="whatYouLike"></textarea>
+            <button type="submit">Speichern</button>
+        </form>
+    </div>
+</body>
+</html>

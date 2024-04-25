@@ -1,0 +1,75 @@
+body {
+    background-color: #ffe6f0; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ff94ac; 
+}
+
+.top-nav {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 15px 10px; 
+    display: flex;
+    justify-content: space-around; 
+    z-index: 2; /* Über Inhaltsbereich legen */
+}
+
+.heart-button {
+    background-color: #ff91a4; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 20px; /* Abrundung der Ecken */
+    cursor: pointer; /* Zeiger als Zeigertyp */
+    transition: background-color 0.3s; 
+    z-index: 1; /* Button über das Hintergrundbild legen */
+}
+
+.heart-button:hover {
+    background-color: #fc4c4e; 
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto; /* Zentriert die Container und fügt Abstand zum oberen Rand hinzu */
+    padding: 20px;
+}
+
+.friend-entry {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.friend-entry input[type="text"],
+.friend-entry textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #ff94ac; /* Rosa Farbcode */
+    background-color: rgba(255, 209, 220, 0.5); 
+}
+
+.friend-entry button {
+    background-color: #ff91a4; 
+    color: white; 
+    border: none; /* Kein Rand */
+    padding: 10px 20px; /* Innenabstand */
+    font-size: 16px; 
+    border-radius: 20px; /* Abrundung der Ecken */
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    z-index: 1; 
+}
+
+.friend-entry button:hover {
+    background-color: #fc4c4e; 
+}
