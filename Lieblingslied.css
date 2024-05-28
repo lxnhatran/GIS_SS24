@@ -1,0 +1,56 @@
+/* Custom styles for MDL textfields */
+.custom-textfield .mdl-textfield__label:after {
+    background-color: #e91e63 !important; /* Pink color for the floating label */
+}
+
+.custom-textfield .mdl-textfield__input:focus ~ .mdl-textfield__label:after,
+.custom-textfield .mdl-textfield__input:not(:focus):valid ~ .mdl-textfield__label:after {
+    background-color: #e91e63 !important; /* Pink color when focused or valid */
+}
+
+.custom-textfield .mdl-textfield__input:focus {
+    border-bottom: 1px solid #e91e63 !important; /* Pink bottom border when focused */
+}
+
+.custom-textfield.is-focused .mdl-textfield__label,
+.custom-textfield.is-dirty .mdl-textfield__label {
+    color: #e91e63 !important; /* Pink color for the floating label itself */
+}
+
+.custom-textfield.is-focused .mdl-textfield__input {
+    border-bottom-color: #e91e63 !important; /* Pink bottom border when focused */
+}
+
+/* Additional custom styles for other elements */
+.custom-button {
+    background-color: #e91e63; /* Pink color for the button */
+    border-radius: 12px; /* Rounded corners for the buttons */
+}
+
+.custom-button:hover {
+    background-color: #d81b60; /* Slightly darker pink on hover */
+}
+
+/* Styles for song items */
+.song-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.song-item img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.song-item a {
+    flex: 1;
+    margin: 0;
+    font-size: 16px;
+}
+
+.song-item button {
+    margin-left: 10px;
+}

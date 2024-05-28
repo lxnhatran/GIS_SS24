@@ -1,75 +1,130 @@
+/* Globale Stile */
 body {
-    background-color: #ffe6f0; 
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffe4e1; /* Sehr helles Rosa */
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    color: #ff94ac; 
 }
 
-.top-nav {
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    background-color: rgba(255, 255, 255, 0.7); 
-    padding: 15px 10px; 
+/* Benutzerdefinierte Stile für den Header und Drawer */
+.custom-header, .custom-drawer {
+    background-color: #ffb6c1 !important; /* Hellrosa */
+}
+
+/* Weitere benutzerdefinierte Stile */
+.mdl-layout__header-row .mdl-layout-title,
+.mdl-navigation__link {
+    color: #ffffff !important; /* Weiß */
+}
+
+.page-content {
+    padding: 20px;
     display: flex;
-    justify-content: space-around; 
-    z-index: 2; /* Über Inhaltsbereich legen */
+    flex-direction: column;
+    align-items: center;
 }
 
-.heart-button {
-    background-color: #ff91a4; 
-    color: white; 
-    border: none; 
-    padding: 10px 20px; 
-    font-size: 16px; 
-    border-radius: 20px; /* Abrundung der Ecken */
-    cursor: pointer; /* Zeiger als Zeigertyp */
-    transition: background-color 0.3s; 
-    z-index: 1; /* Button über das Hintergrundbild legen */
+.custom-button {
+    background-color: #ffb6c1 !important; /* Hellrosa */
+    color: #ffffff !important; /* Weiß */
 }
 
-.heart-button:hover {
-    background-color: #fc4c4e; 
-}
-
-.container {
-    max-width: 600px;
-    margin: 50px auto; /* Zentriert die Container und fügt Abstand zum oberen Rand hinzu */
-    padding: 20px;
-}
-
-.friend-entry {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.friend-entry input[type="text"],
-.friend-entry textarea {
+.mdl-textfield {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+}
+
+.mdl-data-table {
+    width: 100%;
+}
+
+/* Benutzerdefinierte Stile für den Löschen-Button */
+.custom-delete-button {
+    background-color: #ffb6c1 !important; /* Hellrosa */
+    color: #ffffff !important; /* Weiß */
+}
+.container {
+    text-align: center; /* Zentriert den Inhalt horizontal */
+}
+
+#uploaded-image {
+    max-width: 100%; /* Maximale Breite des Bildes auf 100% des verfügbaren Platzes setzen */
+    max-height: 300px; /* Maximale Höhe des Bildes auf 300px setzen */
+    display: block; /* Das Bild als Blockelement anzeigen, um die Breite automatisch an den Container anzupassen */
+    margin: 0 auto; /* Zentrieren des Bildes horizontal im Container */
+}
+
+/* Custom styles for MDL textfields */
+.custom-textfield .mdl-textfield__label:after {
+    background-color: #e91e63; /* Pink color for the floating label */
+}
+
+.custom-textfield .mdl-textfield__input:focus ~ .mdl-textfield__label:after,
+.custom-textfield .mdl-textfield__input:not(:focus):valid ~ .mdl-textfield__label:after {
+    background-color: #e91e63; /* Pink color when focused or valid */
+}
+
+.custom-textfield .mdl-textfield__input:focus {
+    border-bottom: 1px solid #e91e63; /* Pink bottom border when focused */
+}
+
+.custom-textfield.is-focused .mdl-textfield__label,
+.custom-textfield.is-dirty .mdl-textfield__label {
+    color: #e91e63; /* Pink color for the floating label itself */
+}
+
+.custom-textfield.is-focused .mdl-textfield__input {
+    border-bottom-color: #e91e63; /* Pink bottom border when focused */
+}
+
+/* Additional custom styles for other elements */
+.custom-button {
+    background-color: #e91e63; /* Pink color for the button */
+}
+
+.custom-button:hover {
+    background-color: #d81b60; /* Slightly darker pink on hover */
+}
+
+.button {
+    background-color: #e91e63; /* Pink color for the image buttons */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 16px;
-    color: #ff94ac; /* Rosa Farbcode */
-    background-color: rgba(255, 209, 220, 0.5); 
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
-.friend-entry button {
-    background-color: #ff91a4; 
-    color: white; 
-    border: none; /* Kein Rand */
-    padding: 10px 20px; /* Innenabstand */
-    font-size: 16px; 
-    border-radius: 20px; /* Abrundung der Ecken */
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-    z-index: 1; 
+.button:hover {
+    background-color: #d81b60; /* Slightly darker pink on hover */
+}
+.custom-textfield .mdl-textfield__input:focus {
+    border-bottom: 1px solid #e91e63 !important; /* Pink bottom border when focused */
 }
 
-.friend-entry button:hover {
-    background-color: #fc4c4e; 
+.custom-textfield.is-focused .mdl-textfield__label,
+.custom-textfield.is-dirty .mdl-textfield__label {
+    color: #e91e63 !important; /* Pink color for the floating label itself */
 }
+
+.custom-textfield.is-focused .mdl-textfield__input {
+    border-bottom-color: #e91e63 !important; /* Pink bottom border when focused */
+}
+
+.frage {
+    padding-left: 90%;
+
+}
+
+.next-page-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
