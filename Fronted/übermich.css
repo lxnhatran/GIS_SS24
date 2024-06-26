@@ -1,0 +1,59 @@
+/* Reset für den Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #ffe6f0; /* Rosa Hintergrundfarbe */
+}
+
+/* Stile für die Top-Navigation */
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Halbtransparenter Hintergrund */
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+/* Stile für die Links in der Top-Navigation */
+.top-nav a {
+    font-family: "Arial", sans-serif;
+    color: #ff94ac;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.top-nav a:hover {
+    background-color: #ff91a4; /* Hellrosa Hintergrundfarbe bei Hover */
+    color: white;
+}
+
+/* Stile für den Hauptinhalt (Über mich) */
+.about-me {
+    max-width: 800px;
+    margin: 100px auto; /* Zentriert den Inhalt vertikal und horizontal */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Weißer Hintergrund mit Transparenz */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatteneffekt */
+}
+
+.about-me h1 {
+    font-size: 36px;
+    color: #ff94ac;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ff94ac;
+    margin-bottom: 20px;
+}
